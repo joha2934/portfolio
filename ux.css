@@ -174,4 +174,9 @@ h1 b {
     text-align: center;
 }
 
+.iframe {
+    margin: 0 auto;
+    max-width: 375px;
+}
+
 
