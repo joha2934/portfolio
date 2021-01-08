@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 1000px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding: 1rem 0 0.5rem 0;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #090807bd;
+    z-index: 3;
+    box-shadow: 1px 1px 5px #090807bd;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:flex-end;
+
+}
+h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: orange;
+    letter-spacing: -1px;
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+
+h2 {
+text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    padding-top: 2rem;
+    font-size: 2.8rem;
+    line-height: 2rem;
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+    margin-top: 2rem
+}
+
+p.overskrift {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+    font-weight: 200;
+}
+
+nav a {
+    color: white;
+    margin-left: 2rem;
+    position: relative;
+}
+
+a.hover-streg:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a.hover-streg:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+a.linkedin {
+    max-width: 1.6rem;
+        filter: hue-rotate(-20deg);
+}
+a.linkedin:hover {
+    opacity: 0.7;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: #191919;
+    color: white;
+    padding: 3rem 0 3rem 0;
+    box-shadow: 1px -2px 10px #00000020;
+}
+
+footer p {
+    margin: 0;
+    line-height: 3rem;
+}
+
+footer hr {
+    max-width: 200px;
+margin: 0 auto;
+    border-color: white;
+}

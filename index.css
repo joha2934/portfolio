@@ -1,0 +1,251 @@
+/* --- section 1 ------- */
+
+#section_one {
+   background-image: url("bg_back.jpg");
+    height: 120vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#section_one h2 {
+    font-weight: 200;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    line-height: 0rem;
+}
+
+
+
+#front_container {
+    position: relative;
+    height: 100vh;
+    bottom: 0px;
+}
+
+#bg_front {
+    background-image: url("bg_for_new.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+    width: 100%;
+    position: absolute;
+    filter: contrast(1.1);
+}
+
+
+#h1_container {
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    top: 30vh;
+
+}
+
+.fixed {
+    position: fixed;
+}
+
+.fixed_bg {
+    background-attachment: fixed;
+
+}
+.absolute{
+    position: absolute;
+}
+
+.absolute_bg{
+    background-attachment: inherit;
+    background-position: 0 110px;
+    top: 0px;
+}
+
+/*----- section 2 ----- */
+
+#section_two {
+    background-color: #020000;
+    height: auto;
+    text-align: center;
+    color: white;
+    display: block;
+}
+
+#section_two h2 {
+    color: orange;
+    transform: rotate(2deg);
+    top: 15px;
+    position: relative;
+    font-size: 3.7rem;
+}
+
+p.overskrift {
+    font-weight: 600;
+    color: white;
+    line-height: 0;
+    margin-bottom: 2rem;
+}
+
+#section_two .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+#section_two a {
+    border: 1px solid orange;
+    color: orange;
+    padding: 0.5rem;
+    margin: 2rem auto;
+    display:inherit;
+    max-width: 100px;
+}
+
+
+
+#section_two a:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0%;
+    background-color: orange;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+#section_two a:hover:before {
+    visibility: visible;
+    height: 100%;
+}
+
+article {
+   background-color: #2d2c2c;
+    padding: 2rem 1rem 1rem 1rem;
+    margin-bottom: 5rem;
+}
+
+
+
+
+
+/* ----  section 3 -----*/
+#section_three{
+    background-color: #f3f3f3;
+    padding: 5rem 0 2rem 0;
+}
+#section_three .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+}
+
+#section_three h2 {
+    color: orange;
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+#section_three a {
+    margin: 0;
+}
+
+.port {
+    margin-bottom: 7rem;
+    position: relative;
+    background-color: white;
+    box-shadow: 1px 2px 4px #00000010;
+    padding: 1rem 1rem 4rem 1rem;
+}
+
+.port h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+    position: absolute;
+    bottom: -35px;
+    color: orange;
+    left: 35%;
+    z-index: 2;
+    text-align: center;
+    font-weight: 600;
+    transform: rotate(-5deg);
+}
+
+.port b {
+    font-size: 4.5rem;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px #00000020;
+}
+
+.number {
+    position: absolute;
+    color: orange;
+    font-size: 4rem;
+    font-weight: 800;
+    top: -80px;
+    left: 10px;
+    z-index: 1;
+}
+
+.port img {
+    display: block;
+    filter:grayscale(0.9);
+}
+
+.animation b, .indhold b {
+    font-size: 3.5rem;
+    line-height: 1.7rem;
+}
+
+.animation h3 {
+    left: 17%;
+    bottom: -30px;
+}
+ .indhold h3 {
+    left: 28%;
+    bottom: -30px;
+}
+
+.port:hover img {
+    filter: none;
+    transition: 0.5s ease-in-out;
+}
+
+.port:hover h3 {
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction:alternate-reverse;
+    animation-timing-function:linear;
+}
+
+@keyframes rotate {
+    from {transform: rotate(2deg);}
+
+    to {transform: rotate(-5deg);}
+}
+
+/* ----- section 4 ----- */
+
+#section_four{
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+}
+
+#section_four a {
+    border: 2px solid black;
+    color: black;
+    display: block;
+    max-width: 100px;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+#section_four p {
+    font-weight: 400;
+}
