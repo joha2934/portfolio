@@ -154,6 +154,10 @@ h1 b {
     letter-spacing: 0.03rem;
 }
 
+#section_five_two .container {
+    grid-template-columns: 1fr 2fr;
+}
+
 /* ------- sektion 6 -------- */
 #section_six {
     background-color: orange;
@@ -163,6 +167,7 @@ h1 b {
 
 #main .container.done {
     display:block;
+    position: inherit;
 }
 
 #section_six h2 {
@@ -173,11 +178,49 @@ h1 b {
 #section_six a {
     border: 2px solid black;
     color: black;
-    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem;
     max-width: 200px;
     margin: 2rem auto;
-    padding: 0.5rem;
-    text-align: center;
+}
+
+
+.aendringer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+
+.video {
+    max-width: 50%;
+    margin: 0 auto;
+    min-width: 400px;
+}
+
+.knap {
+    position: relative;
+    margin: 2rem auto;
+    max-width: 210px;
+
+}
+.knap_bg {
+    content: "";
+    position: absolute;
+    width: 205px;
+    height: 0;
+    bottom: -0.5rem;
+    left: 0;
+    background-color: #ffffffe3;
+   visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    max-width: 205px;
+}
+
+#section_six a:hover + .knap_bg {
+    visibility: visible;
+    height: 160%;
 }
 
 
