@@ -8,8 +8,9 @@ p {
     color: orange;
      max-width: 1200px;
      margin: 0 auto;
-    padding-top: 0;
      line-height: 4rem;
+     padding: 0 1rem 0 1rem;
+     font-size: 2rem;
 }
 
 h3 {
@@ -26,6 +27,10 @@ ul {
     font-size: 0.8rem;
     line-height: 1.7rem;
     margin-top: 0.7rem;
+}
+
+   #main .container {
+    padding: 1rem 1rem 3rem 1rem;
 }
 
 /* ---- sektion 1 ------ */
@@ -71,12 +76,7 @@ h1 b {
     padding-top: 4rem;
 }
 
- #main .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 6rem;
-    padding: 0 0 3rem 0;
-}
+
 
 #section_two h2 {
     color: orange;
@@ -88,15 +88,10 @@ h1 b {
     background-color: #f3f3f3;
     padding-top: 4rem;
 }
-#section_three .image_container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
 
 #section_three .container {
     border-bottom: 2px solid lightgrey;
-    padding: 2rem 0 2rem 0;
 }
 
 #section_three a {
@@ -145,9 +140,6 @@ h1 b {
     margin: 1rem 0 0 0;
 }
 
-#section_five .container.lighthouse {
-    grid-template-columns: 1fr 2fr;
-}
 
 #section_five .container.lighthouse_col {
     border: none;
@@ -194,11 +186,12 @@ h1 b {
 #section_six a {
     border: 2px solid black;
     color: black;
-    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem;
     max-width: 200px;
     margin: 2rem auto;
-    padding: 0.5rem;
-    text-align: center;
 }
 
 .iframe {
@@ -207,13 +200,69 @@ h1 b {
 }
 
 
-#section_five_two .container {
-    grid-template-columns: 1fr 3fr;
-}
 #section_five_two{
     background-color: #f3f3f3;
     padding-top: 4rem;
 }
 #section_five_one {
     padding-top: 4rem;
+}
+
+.knap {
+    position: relative;
+    margin: 2rem auto;
+    max-width: 209px;
+
+}
+.knap_bg {
+    content: "";
+    position: absolute;
+    width: 209px;
+    height: 0;
+    bottom: -0.5rem;
+    left: 0;
+    background-color: #191919;
+   visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    max-width: 209px;
+}
+
+#section_six a:hover + .knap_bg {
+    visibility: visible;
+    height: 160%;
+}
+
+#section_six a:hover {
+    color: lightgrey;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media only screen and (min-width:600px) {
+
+    h2 {
+        font-size: 3rem;
+    }
+
+     #main .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6rem;
+    padding: 0rem 1rem 3rem 1rem;
+}
+
+    #section_three .image_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+    #section_five .container.lighthouse {
+    grid-template-columns: 1fr 2fr;
+}
+
+    #section_five_two .container {
+    grid-template-columns: 1fr 3fr;
+}
+
 }
