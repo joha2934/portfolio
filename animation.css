@@ -18,7 +18,8 @@ h3 {
     letter-spacing: 0.05rem;
 }
 
-img {display: block;}
+#main img {display: block;
+margin-top: 1rem;}
 
 video {
     display: block;
@@ -140,6 +141,11 @@ h1 b {
     padding-top: 4rem;
 }
 
+#section_five .container {
+    border-bottom: 1px solid grey;
+    padding-top: 1rem;
+}
+
 #section_five img {
     margin: 1rem 0 0 0;
 }
@@ -156,6 +162,10 @@ h1 b {
 
 #section_five_two .container {
     grid-template-columns: 1fr 2fr;
+}
+
+#section_five_two {
+     padding-top: 4rem;
 }
 
 /* ------- sektion 6 -------- */
@@ -212,7 +222,7 @@ h1 b {
     height: 0;
     bottom: -0.5rem;
     left: 0;
-    background-color: #ffffffe3;
+    background-color: #191919;
    visibility: hidden;
     transition: all 0.3s ease-in-out;
     max-width: 205px;
@@ -221,6 +231,11 @@ h1 b {
 #section_six a:hover + .knap_bg {
     visibility: visible;
     height: 160%;
+}
+
+#section_six a:hover {
+    color: lightgrey;
+    transition: all 0.3s ease-in-out;
 }
 
 
