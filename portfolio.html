@@ -2,20 +2,27 @@
 <html lang="da">
 <head>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio eksamen</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="portfolio.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<script src="mutual.js"></script>
 </head>
 
 <body>
-<header><nav>
+<header>
+  <div class="hide_on_desktop"><button id="burgermenu" aria-label="menu">
+					<svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					</svg></button></div>
+  <nav id="menupunkter" class="hide_on_mobile">
    <a class="hover-streg" href="index.html">Forside</a>
     <a class="hover-streg" href="index.html#portfolio">Portfolio</a>
-    <a class="hover-streg" href="#">CV</a>
-    <a class="linkedin" href="#"><img src="LI-In-Bug.png" alt="linkedin link"></a>
+    <a class="hover-streg" href="index.html#section_two">Om mig</a>
+    <a class="linkedin" href="https://www.linkedin.com/in/johanne-skou-karlsen/"><img src="LI-In-Bug.png" alt="linkedin link"></a>
 </nav></header>
 <div id="main">
 
@@ -52,24 +59,30 @@
             <h3>Mine tanker</h3>
             <p>Da jeg skulle idéudvikle denne side, spurgte jeg mig selv om, hvem er jeg? og hvad vil jeg gerne have at min portfolio udstråler?</p>
             <p>Jeg skrev nogle ting ned, som jeg syntes var vigtige.</p>
-            <ul>
+
+
+            </div>
+            <div class="col">
+             <ul>
                 <li>Kreativ</li>
                 <li>Teknisk</li>
                 <li>Sjov</li>
                 <li>Rød tråd</li>
             </ul>
-
-            </div>
-            <div class="col">
-            <h3>Moodboard</h3>
         </div>
            </div>
             <div class="container">
+
         <div class="col">
         <h3>Wireframe</h3>
+        <div class="wireframe">
+            <img src="img/port_wireframe_index.jpg" alt="wireframe for index">
+        <img src="img/port_wireframe_tema.jpg" alt="wireframe for tema"></div>
         </div>
         <div class="col">
         <h3>Prototype</h3>
+        <p>Jeg begyndte at gøre min idé mere virkelig, ved at skabe en prototype ud fra mit wireframe. Jeg har dog ændret nogle ting senere i processen, da jeg ikke syntes at det så ud som jeg forestillede mig.</p>
+        <img src="img/port_proto.png" alt="portfolio prototype">
 
 
         </div>
@@ -81,10 +94,17 @@
    <h2>Billeder</h2>
     <div class="container">
     <div class="col">
+    <h3>Inspiration</h3>
+    <p>Jeg er helt vild med denne måde at fremvise sine projekter på.</p>
+    <img src="img/port_img_insp.png" alt="inspiration fra nettet">
+    <p>Jeg har derfor prøvet at lave noget i samme stemning, for mine splash fotos.</p>
 
 
     </div>
     <div class="col">
+    <h3>Eksempler på mine billeder</h3>
+    <img src="splash-web.jpg" alt="web splash">
+    <img src="img/UX_splash.jpg" alt="ux splash">
     </div>
     </div>
 </div>
@@ -114,17 +134,31 @@
         <div class="container">
         <div class="col">
         <h3>Portfolio links</h3>
+           <p>Her ønskede jeg at skabe noget kreativt som gik ud over kant. Jeg legede længe med det, indtil jeg syntes at det fungerede.</p>
+            <img src="img/port_links.png" alt="links">
+
+            <img src="img/port_linkshtml.png" alt="html for portfolio links">
+            <h4>html</h4>
 
             </div>
         <div class="col">
+        <p>Jeg har brugt animation, når man hover over linksene – det gør det mere sjovt og spændene.</p>
+        <img src="img/port_linkscss.png" alt="css animation for portfolio links">
+        <h4>CSS :hover</h4>
 
         </div>
     </div><div class="container">
         <div class="col">
         <h3>Knapper</h3>
-
+        <p>For at få mine knapper som jeg ønskede, har jeg måtte være lidt kreativ.</p>
+        <img src="img/port_knap.png" alt="knapper">
+        <p>Jeg har lagt en baggrund på min knapper, som først bliver synlig med en lille animation, når man holder musen over.</p>
+<img src="img/port_knaphtml.png" alt="knap html">
+           <h4>html</h4>
             </div>
         <div class="col">
+        <img src="img/port_knapcss.png" alt="knap css">
+        <h4>CSS</h4>
 
         </div>
     </div>
@@ -133,10 +167,9 @@
 <div id="section_six">
    <div class="container done">
        <h2>Det færdige resultat</h2>
-       <video src="http://jsk-grafik.dk/kea/04_animation/spil/video.mp4" width="520" height="auto" controls>I
-       Video af færdigt spil</video>
+
        <div class="knap">
-       <a href="http://jsk-grafik.dk/kea/04_animation/spil/">Gå til det færdige spil</a>
+       <a href="index.html">Gå til forsiden</a>
        <div class="knap_bg"></div>
 
        </div>

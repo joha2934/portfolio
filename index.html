@@ -2,20 +2,28 @@
 <html lang="da">
 <head>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <title>Skole portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <script src="mutual.js"></script>
 </head>
 
 <body>
-<header><nav>
+<header>
+  <div class="hide_on_desktop"><button id="burgermenu" aria-label="menu">
+					<svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					</svg></button></div>
+  <nav id="menupunkter" class="hide_on_mobile">
    <a class="hover-streg" href="index.html">Forside</a>
     <a class="hover-streg" href="index.html#portfolio">Portfolio</a>
-    <a class="hover-streg" href="#">CV</a>
-    <a class="linkedin" href="#"><img src="LI-In-Bug.png"></a>
+    <a class="hover-streg" href="index.html#section_two">Om mig</a>
+    <a class="linkedin" href="https://www.linkedin.com/in/johanne-skou-karlsen/"><img src="LI-In-Bug.png" alt="link til linkedin"></a>
 </nav></header>
 <div id="main">
 <div id=section_one>
@@ -33,88 +41,83 @@
 <div id="section_two">
    <div class="container">
     <h2>Velkommen...</h2>
-    <article><p class="overskrift">...til min 1. semester portfolio, på Multimediedesign uddannelsen.</p>
+    <div class="ommig"><p class="overskrift">...til min 1. semester portfolio, på Multimediedesign uddannelsen.</p>
     <hr>
+    <img src="img/mig.png" alt="Johanne S. Karlsen">
     <p class="text">Mit navn er Johanne, jeg er 26 år og har netop færdiggjort 1. semester som multimediedesigner på KEA.</p>
-    <p class="text">Denne portfolio indeholder opgaver fra de temaer vi har været igennem på 1. semester.</p>
-    <p class="text">Jeg har en længere baggrund inden for grafisk design, jeg elsker at være kreativ og skabe, jeg er altid klar på at lære mere og udvikle på mine kompetencer. Det er en stor tilfredsstillelse for mig, når mine kunder er glade for mit arbejde – det er faktisk dét, som gør at jeg elsker dette fag.</p>
+    <p class="text">Denne portfolio indholder opgaver fra de temaer vi har været igennem på 1. semester.</p>
+    <p class="text">Jeg er tidligere uddannet mediegrafiker, og har derfor en baggrund inden for grafisk design, jeg elsker at være kreativ og skabe, jeg er altid klar på at lære mere og udvikle på mine kompetencer. Det er en stor tilfredsstillelse for mig, når mine kunder er glade for mit arbejde – det er faktisk dét, som gør at jeg elsker dette fag.</p>
 
-    <p class="overskrift">Vil du se mere om hvad jeg tidligere har lavet?</p>
-<a href="#">Se mit CV</a>
-    </article>
+    <p>Jeg synes allerede på dette semester, at jeg har fået nogle rigtig gode tekniske værktøjer. Jeg glæder mig hver dag til at lære mere!</p>
+    <p class="overskrift">Johanne S. Karlsen</p>
+
+    </div>
     </div>
 </div>
 
 <div id="section_three">
    <h2 id="portfolio">Online Portfolio</h2>
     <div class="container">
-      <div class="col">
 
-       <a href="web.html">
+
+      <div class="col">
+        <a href="web.html">
          <div class="port web">
-          <div class="col">
-          <p class="number">1.</p>
+          <p class="number">2.</p>
         <h3>Grundlæggende <br>
            <b>Web</b></h3>
-           </div>
-           <div class="col">
-           <div class="filter">
-           </div>
-           <img src="web.jpg">
-           </div>
-       </div></a></div>
+           <img src="web.jpg" alt="grundlæggende web">
+       </div>
+       </a>
+        </div>
+
+
        <div class="col">
        <a href="ux.html">
        <div class="port ux">
-         <div class="col">
-           <img src="ux.jpg">
-           </div>
-          <div class="col">
-          <p class="number">2.</p>
+           <img src="ux.jpg" alt="grundlæggende ux">
+          <p class="number">3.</p>
         <h3>Grundlæggende <br>
            <b>UX</b></h3>
-           </div>
        </div></a></div>
+
+
        <div class="col">
-       <div class="port animation">
        <a href="animation.html">
-       <div class="col">
-       <p class="number">3.</p>
+       <div class="port animation">
+       <p class="number">4.</p>
         <h3>Grundlæggende <br>
            <b>Animation</b></h3>
-           </div>
-           <div class="col">
            <div class="filter">
+           <img src="animation.jpg" alt="grundlæggende animation">
            </div>
-           <img src="animation.jpg">
-           </div>
-           </a>
        </div>
-
+       </a>
        </div>
 
        <div class="col">
        <a href="indhold.html">
        <div class="port indhold">
-          <div class="col">
-           <img src="indhold.jpg">
-           </div>
-           <div class="col">
-           <p class="number">4.</p>
+           <img src="indhold.jpg" alt="grundlæggende indhold">
+           <p class="number">5.</p>
         <h3>Grundlæggende <br>
            <b>Indhold</b></h3>
-           </div>
        </div>
        </a>
         </div>
+
     </div>
 </div>
 
 <div id="section_four">
     <div class="container">
-        <h2>5. Proces for denne side</h2>
+        <h2>6. Proces for denne side</h2>
         <p>Se hvordan jeg har arbejdet med denne portfolio side.</p>
-        <a href="portfolio.html">Se her</a>
+         <div class="knap">
+       <a href="portfolio.html">Se her</a>
+       <div class="knap_bg"></div>
+
+       </div>
     </div>
 </div>
 </div>
@@ -132,6 +135,5 @@
 
 
 </body>
-<script src="script.js"></script>
 
 </html>

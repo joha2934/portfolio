@@ -2,20 +2,27 @@
 <html lang="da">
 <head>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grundlæggende web</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="web.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<script src="mutual.js"></script>
 </head>
 
 <body>
-<header><nav>
+<header>
+  <div class="hide_on_desktop"><button id="burgermenu" aria-label="menu">
+					<svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					</svg></button></div>
+  <nav id="menupunkter" class="hide_on_mobile">
    <a class="hover-streg" href="index.html">Forside</a>
     <a class="hover-streg" href="index.html#portfolio">Portfolio</a>
-    <a class="hover-streg" href="#">CV</a>
-    <a class="linkedin" href="#"><img src="LI-In-Bug.png" alt="link til linkedin"></a>
+    <a class="hover-streg" href="index.html#section_two">Om mig</a>
+    <a class="linkedin" href="https://www.linkedin.com/in/johanne-skou-karlsen/"><img src="LI-In-Bug.png" alt="link til linkedin"></a>
 </nav></header>
 <div id="main">
 

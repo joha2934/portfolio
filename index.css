@@ -3,6 +3,10 @@ h2 {
 }
 /* --- section 1 ------- */
 
+h1 {
+    font-size: 3rem;
+}
+
 #section_one {
    background-image: url("bg_back.jpg");
     height: 120vh;
@@ -14,9 +18,10 @@ h2 {
 
 #section_one h2 {
     font-weight: 200;
-    font-size: 1rem;
+    font-size: 0.8rem;
     letter-spacing: 0.05rem;
     line-height: 0rem;
+    color: white;
 }
 
 
@@ -75,19 +80,29 @@ h2 {
     display: block;
 }
 
+#section_two p {
+    margin: 1rem 0 1rem 0;
+}
+
+#section_two img {
+    max-width: 180px;
+    margin-top: 1.5rem;
+    box-shadow: 2px 3px 5px #00000069;
+    border-radius: 10rem;
+}
+
 #section_two h2 {
     color: orange;
-    transform: rotate(2deg);
-    top: 15px;
+    top: 10px;
     position: relative;
-    font-size: 3.7rem;
+    font-size: 2rem;
 }
 
 p.overskrift {
     font-weight: 600;
     color: white;
-    line-height: 0;
-    margin-bottom: 2rem;
+    line-height: 2rem;
+    margin-bottom: 5rem;
 }
 
 #section_two .container {
@@ -107,27 +122,12 @@ p.overskrift {
 
 
 
-#section_two a:before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0;
-    bottom: 0;
-    left: 0%;
-    background-color: orange;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-}
 
-#section_two a:hover:before {
-    visibility: visible;
-    height: 100%;
-}
-
-article {
+.ommig {
    background-color: #2d2c2c;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
     margin-bottom: 5rem;
+    border-bottom: 10px solid orange
 }
 
 
@@ -162,7 +162,7 @@ article {
 .port h3 {
     font-size: 1rem;
     text-transform: uppercase;
-    line-height: 2.5rem;
+    line-height: 2rem;
     position: absolute;
     bottom: -35px;
     color: orange;
@@ -174,7 +174,7 @@ article {
 }
 
 .port b {
-    font-size: 4.5rem;
+    font-size: 2rem;
     font-weight: 800;
     text-shadow: 1px 1px 2px #00000020;
 }
@@ -195,7 +195,7 @@ article {
 }
 
 .animation b, .indhold b {
-    font-size: 3.5rem;
+    font-size: 2rem;
     line-height: 1.7rem;
 }
 
@@ -236,27 +236,96 @@ article {
     padding: 4rem 1rem 4rem 1rem;
 }
 
-#section_four a {
-    border: 2px solid black;
-    color: black;
-    display: block;
-    max-width: 100px;
-    margin: 2rem auto;
-    padding: 0.5rem;
-}
 
 #section_four p {
     font-weight: 400;
 }
 
+#section_four a {
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    max-width: 209px;
+    margin: 2rem auto;
+}
+
+#section_four a:hover + .knap_bg {
+    visibility: visible;
+    height: 160%;
+}
+
+#section_four a:hover {
+    color: lightgrey;
+    transition: all 0.3s ease-in-out;
+}
+
+#section_four .knap {
+    position: relative;
+    margin: 2rem auto;
+    max-width: 122px;
+
+}
+#section_four .knap_bg {
+    position: absolute;
+    width: 215px;
+    height: 0;
+    bottom: -0.5rem;
+    left: 0;
+    background-color: #191919;
+   visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    max-width: 121px;
+}
+
 @media only screen and (min-width:600px) {
+
+    .animation b, .indhold b {
+    font-size: 4rem;
+    line-height: 1.7rem;
+}
 
     #section_three .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 4rem;
 }
+    .port b {
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px #00000020;
+}
     h2 {
         font-size: 3rem;
+    }
+
+    .port h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+    position: absolute;
+    color: orange;
+    z-index: 2;
+    text-align: center;
+    font-weight: 600;
+    transform: rotate(-5deg);
+}
+    #section_one h2 {
+    font-weight: 200;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    line-height: 0rem;
+        color: black;
+}
+    #section_two h2 {
+    color: orange;
+    top: 10px;
+    position: relative;
+    font-size: 3.7rem;
+}
+    h1 {
+        font-size: 5.5rem;
     }
 }

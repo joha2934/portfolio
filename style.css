@@ -31,7 +31,6 @@ nav {
 
 }
 h1 {
-    font-size: 5rem;
     font-weight: 800;
     color: orange;
     letter-spacing: -1px;
@@ -70,29 +69,11 @@ nav a {
     position: relative;
 }
 
-a.hover-streg:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: orange;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-}
-
-a.hover-streg:hover:before {
-    visibility: visible;
-    width: 100%;
-}
-
 a.linkedin {
-    max-width: 1.6rem;
         filter: hue-rotate(-20deg);
 }
-a.linkedin:hover {
-    opacity: 0.7;
+a.linkedin img {
+    max-width: 1.6rem;
 }
 
 
@@ -113,11 +94,115 @@ footer {
 
 footer p {
     margin: 0;
-    line-height: 3rem;
+    line-height: 2rem;
+    font-size: 0.6rem;
 }
 
 footer hr {
     max-width: 200px;
 margin: 0 auto;
     border-color: white;
+}
+
+@media (max-width: 767px) {
+	.hide_on_mobile {
+		display: none
+	}
+
+	a.online_button {
+		color: #000;
+		background: none;
+		padding: 1rem 0;
+	}
+
+	.on {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: grey;
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		text-align: right;
+	}
+
+	nav a {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+    #burgermenu {
+	background: none;
+	color: orange;
+	border: none;
+	width: 3rem;
+	height: 3rem;
+        float: right;
+        align-items: center;
+}
+
+a.online_button {
+	color: #fff;
+	font-size: 0.9rem;
+	border-radius: 1.5rem;
+	background-color: #697654;
+	border: none;
+	cursor: pointer;
+	padding: 1rem;
+}
+
+
+a:hover.online_button {
+	color: #d4dbce;
+}
+    }
+
+
+/* Navigation Ipad bredformat + desktop */
+
+@media (min-width: 768px) {
+	.hide_on_desktop {
+		display: none;
+	}
+
+	.nav {
+		writing-mode: horizontal-tb;
+		transform: none;
+		text-align: center;
+		flex-direction: row;
+		position: relative;
+	}
+
+	nav a {
+		margin-left: 2rem;
+	}
+    a.hover-streg:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a.hover-streg:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+    a.linkedin {
+    max-width: 1.6rem;
+        filter: hue-rotate(-20deg);
+    margin-right: 1rem;
+}
+a.linkedin:hover {
+    opacity: 0.7;
+}
+    footer p {
+    margin: 0;
+    line-height: 3rem;
+        font-size: 0.8rem;
+}
 }
