@@ -36,7 +36,7 @@ video {
     display: block;
     width:100%;
     max-width: 50vw;
-    min-width: 400px;
+    min-width: 300px;
     margin:2rem auto;
     box-shadow: 1px 1px 5px #00000082;
 }

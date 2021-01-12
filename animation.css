@@ -26,6 +26,7 @@ video {
     display: block;
     width:100%;
     max-width: 50vw;
+    min-width: 300px;
     margin:2rem auto;
     box-shadow: 1px 1px 5px #00000082;
 }
@@ -192,10 +193,6 @@ padding-top: 4rem;
     column-gap: 5px;
 }
 
-video {
-    margin: 2rem auto;
-    min-width: 400px;
-}
 
 .knap {
     position: relative;
