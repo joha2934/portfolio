@@ -120,7 +120,7 @@ margin: 0 auto;
 		top: 100%;
 		left: 0;
 		right: 0;
-		background: grey;
+		background: #131212f5;
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;
