@@ -1,3 +1,6 @@
+h2 {
+    font-size: 2rem;
+}
 /* --- section 1 ------- */
 
 #section_one {
@@ -134,13 +137,9 @@ article {
 /* ----  section 3 -----*/
 #section_three{
     background-color: #f3f3f3;
-    padding: 5rem 0 2rem 0;
+    padding: 5rem 1rem 2rem 1rem;
 }
-#section_three .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 4rem;
-}
+
 
 #section_three h2 {
     color: orange;
@@ -234,7 +233,7 @@ article {
     background-color: orange;
     color: white;
     text-align: center;
-    padding: 4rem 0 4rem 0;
+    padding: 4rem 1rem 4rem 1rem;
 }
 
 #section_four a {
@@ -248,4 +247,16 @@ article {
 
 #section_four p {
     font-weight: 400;
+}
+
+@media only screen and (min-width:600px) {
+
+    #section_three .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+}
+    h2 {
+        font-size: 3rem;
+    }
 }

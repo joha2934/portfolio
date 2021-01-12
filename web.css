@@ -8,8 +8,9 @@ p {
     color: orange;
      max-width: 1200px;
      margin: 0 auto;
-    padding-top: 0;
-     line-height: 4rem;
+    padding: 0 1rem 0 1rem;
+     line-height: 2rem;
+     font-size: 2rem;
 }
 
 h3 {
@@ -28,39 +29,42 @@ video {
     box-shadow: 1px 1px 5px #00000082;
 }
 
+ #main .container {
+    padding: 1rem 1rem 3rem 1rem;
+}
+
 /* ---- sektion 1 ------ */
 #section_one {
     background-image: url(splash-web.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
+    height: 35vh;
+    background-position:top;
+    background-size:cover;
     background-repeat: no-repeat;
     position: relative;
-    background-attachment: fixed;
 }
 
 h1 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 60px;
+    left: 20px;
     transform: rotate(-8deg);
     text-shadow: 1px 1px 4px #00000025;
-    line-height: 3.5rem;
+    line-height: 2rem;
     background-color: #f9f9f9f7;
     border-radius: 100rem;
     max-width: 270px;
-    max-height: 230px;
+    max-height: 120px;
     height: 100%;
-    padding: 6rem 3.5rem 0rem 3.5rem;
+    padding: 3.5rem 1.5rem 1rem 1.5rem;
     box-shadow: 1px 1px 8px #00000015;
     border: 2px solid orange;
 }
 
 h1 b {
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
 /* ------ sektion 2 ------ */
@@ -71,12 +75,7 @@ h1 b {
     padding-top: 4rem;
 }
 
- #main .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 6rem;
-    padding: 0 0 3rem 0;
-}
+
 
 #section_two h2 {
     color: orange;
@@ -96,18 +95,9 @@ h1 b {
 
 #section_three .container {
     border-bottom: 2px solid lightgrey;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 1rem 2rem 1rem;
 }
 
-#section_three a {
-    border: 2px solid black;
-    color: black;
-    display: block;
-    max-width: 200px;
-    padding: 0.5rem;
-    text-align: center;
-    margin-top: 2rem;
-}
 
 
 /* ------- sektion 4 ----- */
@@ -127,7 +117,7 @@ h1 b {
 #section_four .image_container {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 0.1rem;
 border-top: 1px solid black;
     border-bottom: 2px solid black;
@@ -190,11 +180,135 @@ border-top: 1px solid black;
 #section_six a {
     border: 2px solid black;
     color: black;
-    display: block;
-    max-width: 200px;
-    margin: 2rem auto;
-    padding: 0.5rem;
     text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem;
+    max-width: 209px;
+    margin: 2rem auto;
+}
+.knap {
+    position: relative;
+    margin: 2rem auto;
+    max-width: 209px;
+
+}
+.knap_bg {
+    content: "";
+    position: absolute;
+    width: 209px;
+    height: 0;
+    bottom: -0.5rem;
+    left: 0;
+    background-color: #191919;
+   visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    max-width: 209px;
 }
 
+#section_six a:hover + .knap_bg {
+    visibility: visible;
+    height: 160%;
+}
+
+#section_six a:hover {
+    color: lightgrey;
+    transition: all 0.3s ease-in-out;
+}
+
+#section_three a {
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem;
+    max-width: 209px;
+    margin: 2rem auto;
+}
+
+#section_three a:hover + .knap_bg {
+    visibility: visible;
+    height: 160%;
+}
+
+#section_three a:hover {
+    color: lightgrey;
+    transition: all 0.3s ease-in-out;
+}
+
+#section_three .knap {
+    position: relative;
+    margin: 2rem auto;
+    max-width: 218px;
+
+}
+#section_three .knap_bg {
+    content: "";
+    position: absolute;
+    width: 215px;
+    height: 0;
+    bottom: -0.5rem;
+    left: 0;
+    background-color: #191919;
+   visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    max-width: 215px;
+}
+
+
+@media only screen and (min-width:600px) {
+
+    h2 {
+        font-size: 3rem;
+    }
+
+     #main .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6rem;
+}
+
+    #section_one {
+    background-image: url(splash-web.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+    #section_four .image_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 0.1rem;
+border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    background-color: black;
+}
+    h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transform: rotate(-8deg);
+    text-shadow: 1px 1px 4px #00000025;
+    line-height: 3.5rem;
+    background-color: #f9f9f9f7;
+    border-radius: 100rem;
+    max-width: 270px;
+    max-height: 230px;
+    height: 100%;
+    padding: 6rem 3.5rem 0rem 3.5rem;
+    box-shadow: 1px 1px 8px #00000015;
+    border: 2px solid orange;
+}
+
+h1 b {
+    font-size: 6rem;
+}
+}
 

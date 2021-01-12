@@ -13,7 +13,6 @@ h2 {
      font-size: 2rem;
 }
 
-
 h3 {
     margin-top: 2rem;
     line-height: 1rem;
@@ -39,7 +38,7 @@ ul {
 
 /* ---- sektion 1 ------ */
 #section_one {
-    background-image: url(img/UX_splash.jpg);
+    background-image: url(bg_back_new.jpg);
     height: 35vh;
     background-position:top;
     background-size:cover;
@@ -56,19 +55,19 @@ h1 {
     left: 20px;
     transform: rotate(-8deg);
     text-shadow: 1px 1px 4px #00000025;
-    line-height: 2rem;
+    line-height: 1.5rem;
     background-color: #f9f9f9f7;
     border-radius: 100rem;
     max-width: 270px;
-    max-height: 120px;
+    max-height: 92px;
     height: 100%;
-    padding: 3.5rem 1.5rem 0.5rem 1.5rem;
+    padding: 4rem 1rem 0rem 1rem;
     box-shadow: 1px 1px 8px #00000015;
     border: 2px solid orange;
 }
 
 h1 b {
-    font-size: 4rem;
+    font-size: 1.5rem;
 }
 
 /* ------ sektion 2 ------ */
@@ -91,13 +90,9 @@ h1 b {
 
 #section_three {
     background-color: #f3f3f3;
-    padding-top: 4rem;
+padding-top: 4rem;
 }
-#section_three .image_container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
 
 #section_three .container {
     border-bottom: 2px solid lightgrey;
@@ -112,6 +107,12 @@ h1 b {
     text-align: center;
     margin-top: 2rem;
 }
+
+.figur {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+}
+
 
 
 /* ------- sektion 4 ----- */
@@ -132,6 +133,11 @@ h1 b {
     padding-top: 4rem;
 }
 
+#section_five .container {
+    border-bottom: 1px solid grey;
+    padding-top: 1rem;
+}
+
 #section_five img {
     margin: 1rem 0 0 0;
 }
@@ -146,6 +152,14 @@ h1 b {
     letter-spacing: 0.03rem;
 }
 
+#section_five_two .container {
+    grid-template-columns: 1fr 2fr;
+}
+
+#section_five_two {
+     padding-top: 4rem;
+}
+
 /* ------- sektion 6 -------- */
 #section_six {
     background-color: orange;
@@ -155,6 +169,7 @@ h1 b {
 
 #main .container.done {
     display:block;
+    position: inherit;
 }
 
 #section_six h2 {
@@ -165,16 +180,53 @@ h1 b {
 #section_six a {
     border: 2px solid black;
     color: black;
-    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem;
     max-width: 200px;
     margin: 2rem auto;
-    padding: 0.5rem;
-    text-align: center;
 }
 
-.iframe {
+
+.aendringer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+
+video {
     margin: 2rem auto;
-    max-width: 375px;
+    min-width: 400px;
+}
+
+.knap {
+    position: relative;
+    margin: 2rem auto;
+    max-width: 210px;
+
+}
+.knap_bg {
+    content: "";
+    position: absolute;
+    width: 205px;
+    height: 0;
+    bottom: -0.5rem;
+    left: 0;
+    background-color: #191919;
+   visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    max-width: 205px;
+}
+
+#section_six a:hover + .knap_bg {
+    visibility: visible;
+    height: 160%;
+}
+
+#section_six a:hover {
+    color: lightgrey;
+    transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (min-width:600px) {
@@ -190,9 +242,9 @@ h1 b {
 }
 
     #section_one {
-    background-image: url(img/UX_splash.jpg);
+    background-image: url(bg_back_new.jpg);
     height: 100vh;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -212,17 +264,18 @@ h1 b {
     background-color: #f9f9f9f7;
     border-radius: 100rem;
     max-width: 270px;
-    max-height: 230px;
+    max-height: 175px;
     height: 100%;
-    padding: 6rem 3.5rem 0rem 3.5rem;
+    padding: 7rem 1rem 0rem 1rem;
     box-shadow: 1px 1px 8px #00000015;
     border: 2px solid orange;
 }
 
 h1 b {
-    font-size: 6rem;
+    font-size: 3rem;
+}
 }
 
-}
+
 
 

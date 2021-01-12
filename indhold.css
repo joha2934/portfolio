@@ -32,40 +32,47 @@ ul {
    #main .container {
     padding: 1rem 1rem 3rem 1rem;
 }
+video {
+    display: block;
+    width:100%;
+    max-width: 50vw;
+    min-width: 400px;
+    margin:2rem auto;
+    box-shadow: 1px 1px 5px #00000082;
+}
 
 /* ---- sektion 1 ------ */
 #section_one {
     background-image: url(img/UX_splash.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
+    height: 35vh;
+    background-position:top;
+    background-size:cover;
     background-repeat: no-repeat;
     position: relative;
-    background-attachment: fixed;
 }
 
 h1 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 60px;
+    left: 20px;
     transform: rotate(-8deg);
     text-shadow: 1px 1px 4px #00000025;
-    line-height: 3rem;
+    line-height: 2rem;
     background-color: #f9f9f9f7;
     border-radius: 100rem;
     max-width: 270px;
-    max-height: 230px;
+    max-height: 120px;
     height: 100%;
-    padding: 7rem 3rem 0rem 3rem;
+    padding: 3.5rem 0.5rem 1rem 0.5rem;
     box-shadow: 1px 1px 8px #00000015;
     border: 2px solid orange;
 }
 
 h1 b {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 /* ------ sektion 2 ------ */
@@ -163,9 +170,7 @@ h1 b {
     text-align: center;
 }
 
-#section_five video {
-    margin-top: 2rem;
-}
+
 
 /* ------- sektion 6 -------- */
 #section_six {
@@ -194,10 +199,7 @@ h1 b {
     margin: 2rem auto;
 }
 
-.iframe {
-    margin: 0 auto;
-    max-width: 375px;
-}
+
 
 
 #section_five_two{
@@ -263,6 +265,39 @@ h1 b {
 
     #section_five_two .container {
     grid-template-columns: 1fr 3fr;
+}
+
+    #section_one {
+    background-image: url(img/UX_splash.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+    h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transform: rotate(-8deg);
+    text-shadow: 1px 1px 4px #00000025;
+    line-height: 3rem;
+    background-color: #f9f9f9f7;
+    border-radius: 100rem;
+    max-width: 270px;
+    max-height: 230px;
+    height: 100%;
+    padding: 7rem 3rem 0rem 3rem;
+    box-shadow: 1px 1px 8px #00000015;
+    border: 2px solid orange;
+}
+
+h1 b {
+    font-size: 3.5rem;
 }
 
 }
