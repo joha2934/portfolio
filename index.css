@@ -8,7 +8,7 @@ h1 {
 }
 
 #section_one {
-   background-image: url("bg_back.jpg");
+   background-image: url("img/bg_back.jpg");
     height: 120vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@ h1 {
 }
 
 #bg_front {
-    background-image: url("bg_for_new.webp");
+    background-image: url("img/bg_for_new.webp");
     background-size: cover;
     background-repeat: no-repeat;
     height: 120vh;

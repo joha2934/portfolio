@@ -35,7 +35,7 @@ video {
 
 /* ---- sektion 1 ------ */
 #section_one {
-    background-image: url(splash-web.jpg);
+    background-image: url(img/splash-web.jpg);
     height: 35vh;
     background-position:top;
     background-size:cover;
@@ -270,7 +270,7 @@ border-top: 1px solid black;
 }
 
     #section_one {
-    background-image: url(splash-web.jpg);
+    background-image: url(img/splash-web.jpg);
     height: 100vh;
     background-position: center;
     background-size: cover;

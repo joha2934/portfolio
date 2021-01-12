@@ -38,7 +38,7 @@ ul {
 
 /* ---- sektion 1 ------ */
 #section_one {
-    background-image: url(bg_back_new.jpg);
+    background-image: url(img/bg_back_new.jpg);
     height: 35vh;
     background-position:top;
     background-size:cover;
@@ -250,7 +250,7 @@ video {
     }
 
     #section_one {
-    background-image: url(bg_back_new.jpg);
+    background-image: url(img/bg_back_new.jpg);
     height: 100vh;
     background-position: top;
     background-size: cover;
