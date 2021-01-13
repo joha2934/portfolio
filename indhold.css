@@ -198,8 +198,13 @@ h1 b {
     max-width: 200px;
     margin: 2rem auto;
 }
+#section_six .knap.assets a {
+     max-width: 400px;
 
-
+}
+#section_six .knap.assets {
+    max-width: 239px;
+}
 
 
 #section_five_two{
@@ -208,6 +213,17 @@ h1 b {
 }
 #section_five_one {
     padding-top: 4rem;
+}
+
+.knap.assets {
+    width: 400px
+}
+
+
+
+#section_six .knap.assets .knap_bg {
+    width: 238px;
+    max-width: 238px;
 }
 
 .knap {
@@ -297,6 +313,12 @@ h1 b {
 
 h1 b {
     font-size: 3.5rem;
+}
+      .knapper {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: 0 auto;
 }
 
 }
