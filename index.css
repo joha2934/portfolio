@@ -200,7 +200,7 @@ p.overskrift {
     position: absolute;
     bottom: -35px;
     color: orange;
-    left: 35%;
+    left: 28%;
     z-index: 2;
     text-align: center;
     font-weight: 600;
@@ -208,7 +208,7 @@ p.overskrift {
 }
 
 .port b {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
     text-shadow: 1px 1px 2px #00000020;
 }
@@ -228,13 +228,13 @@ p.overskrift {
     filter:grayscale(0.9);
 }
 
-.animation b, .indhold b {
+.port.animation b, .port.indhold b {
     font-size: 2rem;
     line-height: 1.7rem;
 }
 
 .animation h3 {
-    left: 17%;
+    left: 20%;
     bottom: -30px;
 }
  .indhold h3 {
@@ -345,7 +345,19 @@ p.overskrift {
     text-align: center;
     font-weight: 600;
     transform: rotate(-5deg);
+        bottom: -35px;
+        left: 33%;
 }
+
+.animation h3 {
+    left: 17%;
+    bottom: -30px;
+}
+ .indhold h3 {
+    left: 28%;
+    bottom: -30px;
+}
+
     #section_one h2 {
     font-weight: 200;
     font-size: 1rem;
