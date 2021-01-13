@@ -179,11 +179,11 @@ padding-top: 4rem;
     border: 2px solid black;
     color: black;
     text-align: center;
-    position: relative;
     z-index: 1;
     padding: 0.5rem;
     max-width: 200px;
     margin: 2rem auto;
+    position: relative;
 }
 
 
@@ -193,12 +193,21 @@ padding-top: 4rem;
     column-gap: 5px;
 }
 
+.knap.assets {
+    width: 152px
+}
 
 .knap {
     position: relative;
     margin: 2rem auto;
     max-width: 210px;
+    width: 210px;
 
+}
+
+
+.knap.assets .knap_bg {
+    max-width: 150px;
 }
 .knap_bg {
     content: "";
@@ -271,6 +280,12 @@ padding-top: 4rem;
 
 h1 b {
     font-size: 3rem;
+}
+    .knapper {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
 }
 }
 

@@ -165,11 +165,40 @@ h1 b {
 #section_six a {
     border: 2px solid black;
     color: black;
-    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem;
     max-width: 200px;
     margin: 2rem auto;
-    padding: 0.5rem;
-    text-align: center;
+}
+
+.knap {
+    position: relative;
+    margin: 2rem auto;
+    max-width: 125px;
+
+}
+.knap_bg {
+    position: absolute;
+    width: 209px;
+    height: 0;
+    bottom: -0.5rem;
+    left: 0;
+    background-color: #191919;
+   visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    max-width: 124px;
+}
+
+#section_six a:hover + .knap_bg {
+    visibility: visible;
+    height: 160%;
+}
+
+#section_six a:hover {
+    color: lightgrey;
+    transition: all 0.3s ease-in-out;
 }
 
 .iframe {
