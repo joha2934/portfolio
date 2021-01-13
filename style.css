@@ -120,7 +120,7 @@ margin: 0 auto;
 		top: 100%;
 		left: 0;
 		right: 0;
-		background: #131212f5;
+		background: #000000bf;
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;
@@ -139,6 +139,7 @@ margin: 0 auto;
 	height: 3rem;
         float: right;
         align-items: center;
+        margin-right: 1rem;
 }
 
 a.online_button {
