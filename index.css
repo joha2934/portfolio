@@ -112,13 +112,46 @@ p.overskrift {
     padding-bottom: 2rem;
 }
 
+
+
+
 #section_two a {
     border: 1px solid orange;
     color: orange;
-    padding: 0.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    max-width: 210px;
     margin: 2rem auto;
-    display:inherit;
-    max-width: 100px;
+}
+
+#section_two a:hover + .knap_bg {
+    visibility: visible;
+    height: 160%;
+}
+
+#section_two a:hover {
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+#section_two .knap {
+    position: relative;
+    margin: 2rem auto;
+    max-width: 149px;
+
+}
+#section_two .knap_bg {
+    position: absolute;
+    width: 215px;
+    height: 0;
+    bottom: -0.5rem;
+    left: 0;
+    background-color: orange;
+   visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    max-width: 148px;
 }
 
 
